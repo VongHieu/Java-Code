@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="1250" pageHeight="700" columnWidth="1210" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2c92aa5d-7a5b-4dc3-adba-79a3392b979f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     BANGLUONG."MaBL" AS BANGLUONG_MaBL,
+     BANGLUONG."MaNV" AS BANGLUONG_MaNV,
+     BANGLUONG."TenNV" AS BANGLUONG_TenNV,
+     BANGLUONG."TenCV" AS BANGLUONG_TenCV,
+     BANGLUONG."THANG" AS BANGLUONG_THANG,
+     BANGLUONG."NAM" AS BANGLUONG_NAM,
+     BANGLUONG."MucluongCB" AS BANGLUONG_MucluongCB,
+     BANGLUONG."SoNgayCong" AS BANGLUONG_SoNgayCong,
+     BANGLUONG."TongPC" AS BANGLUONG_TongPC,
+     BANGLUONG."TienBH" AS BANGLUONG_TienBH,
+     BANGLUONG."SoTienThue" AS BANGLUONG_SoTienThue,
+     BANGLUONG."TamUng" AS BANGLUONG_TamUng,
+     BANGLUONG."LuongTH" AS BANGLUONG_LuongTH,
+     BANGLUONG."NgayNhan" AS BANGLUONG_NgayNhan
+FROM
+     "dbo"."BANGLUONG" BANGLUONG
+WHERE THANG =8]]>
+	</queryString>
+	<field name="BANGLUONG_MaBL" class="java.lang.String"/>
+	<field name="BANGLUONG_MaNV" class="java.lang.String"/>
+	<field name="BANGLUONG_TenNV" class="java.lang.String"/>
+	<field name="BANGLUONG_TenCV" class="java.lang.String"/>
+	<field name="BANGLUONG_THANG" class="java.lang.Integer"/>
+	<field name="BANGLUONG_NAM" class="java.lang.Integer"/>
+	<field name="BANGLUONG_MucluongCB" class="java.lang.Double"/>
+	<field name="BANGLUONG_SoNgayCong" class="java.lang.Integer"/>
+	<field name="BANGLUONG_TongPC" class="java.lang.Double"/>
+	<field name="BANGLUONG_TienBH" class="java.lang.Double"/>
+	<field name="BANGLUONG_SoTienThue" class="java.lang.Double"/>
+	<field name="BANGLUONG_TamUng" class="java.lang.Double"/>
+	<field name="BANGLUONG_LuongTH" class="java.lang.Double"/>
+	<field name="BANGLUONG_NgayNhan" class="java.sql.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="90" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="20" width="154" height="20" uuid="b749ab1f-090c-478a-8a0d-5beff46ad337"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[Bộ phận: P. Kế toán]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="225" height="20" uuid="b7a6f9f8-2c69-43fe-819f-dd90a60411a4"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[Đơn vị công ty: Emart Việt Nam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="942" y="0" width="186" height="23" uuid="b1bb7c96-3436-44bd-9f6a-a5348bc74107"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[Mẫu số: 2 - LĐTL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="919" y="47" width="256" height="22" uuid="a606bc90-27d6-46e8-bad1-dee51017b9b9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[Ngày 22/12/2014 của Bộ Tài chính)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="883" y="23" width="325" height="24" uuid="8630a759-13eb-4e0b-88a1-1864d2afd5a6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[(Ban hành theo Thông tư số 200/2014/TT-BTC]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="66" splitType="Stretch">
+			<staticText>
+				<reportElement x="544" y="36" width="49" height="20" uuid="40d2f94f-f08c-4e3c-9b0e-16ef9c506e8e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Serif" size="15"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Tháng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="389" y="10" width="485" height="26" uuid="7455fa34-b0b9-484b-8024-7b16775a6e29"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="18"/>
+				</textElement>
+				<text><![CDATA[BẢNG LƯƠNG NHÂN VIÊN TRONG CÔNG TY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="618" y="36" width="59" height="20" uuid="fd48648a-218b-47a3-9458-e451a68d7118"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Serif" size="15"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Năm]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="593" y="36" width="25" height="20" uuid="3339da25-7803-4e9d-87d6-1df4e261862d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Serif" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BANGLUONG_THANG}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="677" y="36" width="46" height="20" uuid="783de8ee-c554-4e69-a6ef-e6d9481071e5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Serif" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BANGLUONG_NAM}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="67" splitType="Stretch">
+			<staticText>
+				<reportElement x="316" y="41" width="173" height="20" uuid="652670c5-3e61-4536-beb0-d6510d3beb2e"/>
+				<textElement verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Serif" size="15"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Chức vụ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="489" y="41" width="96" height="20" uuid="7f1854ec-7a67-46fe-a0fd-05d7d3b0bf4f"/>
+				<textElement verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Serif" size="15"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Lương cơ bản]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="937" y="41" width="88" height="20" uuid="3dc0f674-1b77-46ac-93c5-47876606640b"/>
+				<textElement verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Serif" size="15"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Tạm ứng]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="174" y="41" width="142" height="20" uuid="46656af0-e833-4b0b-8eee-f667bb0ba99a"/>
+				<textElement verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Serif" size="15"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Tên nhân viên]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="85" y="41" width="89" height="20" uuid="e85de05a-efcd-4706-b28e-290e5a8b0207"/>
+				<textElement verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Serif" size="15"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Mã nhân viên]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="41" width="71" height="20" uuid="25d9bba3-9af4-4d8a-98e6-d784fd71e8cd"/>
+				<textElement verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Serif" size="15"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Mã bảng lương]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="761" y="41" width="95" height="20" uuid="89d89e90-def7-4680-aea9-6b3a6608e248"/>
+				<textElement verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Serif" size="15"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Tiền bảo hiểm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1127" y="41" width="83" height="20" uuid="60524190-9dde-4b71-aa15-d66983b17ec5"/>
+				<textElement verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Serif" size="15"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Ngày nhận]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="856" y="41" width="81" height="20" uuid="eb1e7e3f-5b71-4764-89ad-e194ee609b51"/>
+				<textElement verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Serif" size="15"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Tiền thuế]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="584" y="41" width="82" height="20" uuid="3cab2b3b-80af-4a3e-b367-c980b942bda1"/>
+				<textElement verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Serif" size="15"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Ngày công]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1025" y="41" width="102" height="20" uuid="a0c605cc-f382-4b7e-b8e9-cf436e7d1f16"/>
+				<textElement verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Serif" size="15"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Lương nhận]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="666" y="41" width="95" height="20" uuid="f9f13928-146d-40ef-ba55-ee020dcccce3"/>
+				<textElement verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Serif" size="15"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Tổng phụ cấp]]></text>
+			</staticText>
+			<line>
+				<reportElement x="14" y="66" width="1194" height="1" uuid="ae42d4db-2ca7-4d1c-9958-049acd33924d"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="14" y="0" width="71" height="20" uuid="40f5e451-2623-4336-96b6-222555a9f6a6"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{BANGLUONG_MaBL}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="85" y="0" width="89" height="20" uuid="ed2cac6b-1e88-44c8-9192-26e61869f04d"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{BANGLUONG_MaNV}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="174" y="0" width="142" height="20" uuid="fd431615-47e7-49d6-86e0-cbeb2f3b4941"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{BANGLUONG_TenNV}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="316" y="0" width="173" height="20" uuid="3262bbad-11e0-4220-bb5f-4213ccb5b277"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{BANGLUONG_TenCV}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="489" y="0" width="96" height="20" uuid="f7b3deb5-5748-4eb5-bb8a-e6e3c800aa9b"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{BANGLUONG_MucluongCB}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="584" y="0" width="82" height="20" uuid="9a5d998f-b87c-49f1-b298-b20c1fcbbcd8"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{BANGLUONG_SoNgayCong}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="666" y="0" width="95" height="20" uuid="c8b8f819-a8d2-4bf3-83f2-5ce601599744"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{BANGLUONG_TongPC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="761" y="0" width="95" height="20" uuid="70e17fe0-766e-4d56-9ecf-7a30fb6960df"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{BANGLUONG_TienBH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="856" y="0" width="81" height="20" uuid="d26bedca-7b61-40cd-93a8-917f78c22d37"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{BANGLUONG_SoTienThue}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="937" y="0" width="88" height="20" uuid="87205d6e-160d-4089-9659-70e9d5189c6f"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{BANGLUONG_TamUng}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1028" y="0" width="99" height="20" uuid="944e82fc-dc8f-44e9-9718-49ec7706fe9c"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{BANGLUONG_LuongTH}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1128" y="0" width="82" height="20" uuid="5538a594-e061-4012-8a47-b847b1960ae7"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{BANGLUONG_NgayNhan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="60" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
